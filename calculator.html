@@ -4,7 +4,7 @@
 
 <script type="text/javascript">
 
-//Calcula el resultado de elevar al cubo
+//Funcion que eleva al cubo
 function cube() {
 
 var num = document.getElementById("n1");
@@ -13,7 +13,8 @@ num.value = Math.pow(num.value, 3);
 
 }
 
-//Calcula el resultado del seno de x
+
+//Funcion que calcula el resultado del seno de x
 function sin() {
 
 var num = document.getElementById("n1");
@@ -22,6 +23,14 @@ num.value = Math.sin(num.value);
 
 }
 
+//Funcion que eleva a la cuarta potencia
+function cuartaPotencia() {
+
+var num = document.getElementById("n1");
+
+num.value = Math.pow(num.value, 4);
+
+}
 
 </script>
 
@@ -36,7 +45,10 @@ Number:
 <input type="text" id="n1"><p>
 
 <button onclick="cube()"> x^3 </button>
+
 <button onclick="sin()"> sin(x) </button>
+
+<button onclick="cuartaPotencia()"> x^4 </button>
 
 </body>
 
